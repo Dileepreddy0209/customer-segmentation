@@ -1,0 +1,5 @@
+Model,Clusters,Noise %,Fit time (s),Silhouette,Davies-Bouldin,Calinski-Harabasz
+K-Means,2,0.0,0.017,0.442,0.869,6374.791
+Agglomerative (Ward),2,0.0,0.975,0.417,0.908,5810.314
+GMM,2,0.0,0.019,0.306,0.975,3252.684
+DBSCAN,2,2.2,0.022,0.285,0.987,2940.949

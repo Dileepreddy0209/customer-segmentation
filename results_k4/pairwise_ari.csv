@@ -1,0 +1,5 @@
+,K-Means,Agglomerative (Ward),GMM,DBSCAN
+K-Means,1.0,0.46,0.398,0.151
+Agglomerative (Ward),0.46,1.0,0.427,0.152
+GMM,0.398,0.427,1.0,0.376
+DBSCAN,0.151,0.152,0.376,1.0

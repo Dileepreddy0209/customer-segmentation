@@ -1,0 +1,7 @@
+step,rows
+raw rows,1067371
+drop missing CustomerID,824364
+drop cancelled invoices,805620
+drop non-positive qty/price,805549
+drop non-product stock codes,802679
+drop exact duplicates,776624

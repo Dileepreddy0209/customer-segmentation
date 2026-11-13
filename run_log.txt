@@ -1,0 +1,45 @@
+[1] Loading
+  loaded 1,067,371 rows, 01 Dec 2009 to 09 Dec 2011
+[2] Cleaning
+  raw rows                         1,067,371
+  drop missing CustomerID            824,364
+  drop cancelled invoices            805,620
+  drop non-positive qty/price        805,549
+  drop non-product stock codes       802,679
+  drop exact duplicates              776,624
+[3] RFM
+       Recency  Frequency  Monetary
+count   5861.0     5861.0    5861.0
+mean     200.9        6.3    2913.0
+std      209.2       12.8   14300.5
+min        1.0        1.0       3.0
+25%       26.0        1.0     338.1
+50%       96.0        3.0     855.0
+75%      379.0        7.0    2237.1
+max      739.0      376.0  580987.0
+[4] Selecting k
+    k   inertia  silhouette
+0   2  8420.884       0.442
+1   3  6189.426       0.350
+2   4  4749.399       0.367
+3   5  3977.898       0.339
+4   6  3424.315       0.336
+5   7  3062.554       0.305
+6   8  2770.876       0.298
+7   9  2543.031       0.298
+8  10  2358.871       0.293
+    k=2, eps=0.366
+[5] Fitting models
+               Model  Clusters  Noise %  Fit time (s)  Silhouette  Davies-Bouldin  Calinski-Harabasz
+             K-Means         2      0.0         0.017       0.442           0.869           6374.791
+Agglomerative (Ward)         2      0.0         0.975       0.417           0.908           5810.314
+                 GMM         2      0.0         0.019       0.306           0.975           3252.684
+              DBSCAN         2      2.2         0.022       0.285           0.987           2940.949
+[6] Stability (bootstrap ARI)
+    K-Means    mean ARI=0.989 (sd 0.005)
+    GMM        mean ARI=0.963 (sd 0.017)
+[7] K-Means segment profile
+         Customers  Recency  Frequency  Monetary  Share %
+Segment                                                  
+0             3517    290.0        2.0     405.4     60.0
+1             2344     24.0        8.0    2795.0     40.0

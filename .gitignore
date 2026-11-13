@@ -1,0 +1,18 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Dataset - download from UCI instead (see data/README.md)
+*.xlsx
+*.zip
+
+# Customer-level outputs - never published (see Ethics section)
+**/rfm_labels.csv
+
+# Report drafts at top level - the current version lives in docs/
+/*.docx
+~$*.docx
+
+# macOS
+.DS_Store
